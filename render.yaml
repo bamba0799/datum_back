@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: event_back
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    branch: main
+    repositories:
+      github: https://github.com/bamba0799/datum_back.git
